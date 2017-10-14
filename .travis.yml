@@ -3,4 +3,4 @@ before_install: ./gradlew clean
 jdk:
   - oraclejdk8
 install:
-  - ./gradlew build test
+  - ./gradlew build test --max-workers 2 -Pkotlin.incremental=false
