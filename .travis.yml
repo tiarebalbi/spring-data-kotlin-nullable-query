@@ -1,0 +1,6 @@
+language: java
+before_install: ./gradlew clean
+jdk:
+  - oraclejdk8
+install:
+  - ./gradlew build test
